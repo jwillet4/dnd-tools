@@ -13,6 +13,8 @@ import { DiceRollerComponent } from './dice-roller/dice-roller.component';
 
 import { MatButtonModule } from '@angular/material';
 import { MatInputModule } from '@angular/material';
+import { ButtonsModule } from '@progress/kendo-angular-buttons';
+
 
 @NgModule({
   declarations: [
@@ -32,7 +34,8 @@ import { MatInputModule } from '@angular/material';
     ]),
     BrowserAnimationsModule,
     MatButtonModule,
-    MatInputModule
+    MatInputModule,
+    ButtonsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
