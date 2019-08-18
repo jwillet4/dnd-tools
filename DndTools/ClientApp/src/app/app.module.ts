@@ -9,6 +9,7 @@ import { NavMenuComponent } from './nav-menu/nav-menu.component';
 import { HomeComponent } from './home/home.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatButtonModule } from '@angular/material';
+import { ChartsModule } from '@progress/kendo-angular-charts';
 
 @NgModule({
   declarations: [
@@ -25,7 +26,8 @@ import { MatButtonModule } from '@angular/material';
       //{ path: 'counter', component: CounterComponent },
     ]),
     BrowserAnimationsModule,
-    MatButtonModule
+    MatButtonModule,
+    ChartsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

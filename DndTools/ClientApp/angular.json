@@ -147,5 +147,10 @@
       }
     }
   },
-  "defaultProject": "DndTools"
+  "defaultProject": "DndTools",
+  "schematics": {
+    "@schematics/angular:component": {
+      "styleext": "scss"
+    }
+  }
 }
