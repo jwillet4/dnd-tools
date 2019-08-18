@@ -1,0 +1,10 @@
+<p style="font-weight: bold">
+  Quick Roll
+</p>
+<button mat-raised-button class="die" color="secondary" (click)="rollSingleDie(die)" *ngFor="let die of dice">d{{die}}</button>
+<p style="padding: 10px" *ngIf="singleDieResult == undefined">
+  Roll a die above...
+</p>
+<p style="padding: 10px" *ngIf="singleDieResult != undefined">
+  You rolled a {{singleDieResult}}
+</p>

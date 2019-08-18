@@ -25,6 +25,7 @@
     "@angular/platform-server": "6.1.10",
     "@angular/router": "6.1.10",
     "@nguniversal/module-map-ngfactory-loader": "6.0.0",
+    "@progress/kendo-angular-buttons": "^5.0.0",
     "@progress/kendo-angular-charts": "^4.0.1",
     "@progress/kendo-angular-common": "^1.0.0",
     "@progress/kendo-angular-grid": "^4.1.1",
