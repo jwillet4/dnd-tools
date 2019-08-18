@@ -1,10 +1,26 @@
 <p style="font-weight: bold">
   Quick Roll
 </p>
-<button mat-raised-button class="die" color="secondary" (click)="rollSingleDie(die)" *ngFor="let die of dice">d{{die}}</button>
+<button mat-raised-button class="die" color="primary" (click)="rollSingleDie(die)" *ngFor="let die of dice">d{{die}}</button>
 <p style="padding: 10px" *ngIf="singleDieResult == undefined">
   Roll a die above...
 </p>
 <p style="padding: 10px" *ngIf="singleDieResult != undefined">
   You rolled a {{singleDieResult}}
+</p>
+
+<p style="font-weight: bold">
+  Multi-Roller
+</p>
+<mat-form-field style="width: 120px">
+  <input matInput type="number" placeholder="Die value" [(ngModel)]="dieValue">
+</mat-form-field>
+<mat-form-field style="width: 120px; padding-left: 5px; padding-right: 20px">
+  <input matInput type="number" name="numDie" placeholder="Number of rolls" [(ngModel)]="dieCount">
+</mat-form-field>
+<button mat-raised-button color="primary" (click)="rollMultipleDie()">Roll Dice</button>
+<p style="padding: 10px" *ngIf="multiDieResults.length != 0">
+  You rolled {{multiDieResults}}
+  <br />
+  Sum: {{multiDieSum}} Avg: {{multiDieAvg}}
 </p>
